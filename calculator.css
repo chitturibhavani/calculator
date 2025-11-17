@@ -1,0 +1,82 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 100vh;
+    background-image: radial-gradient(circle,#2a6686 20%,#364a5a);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+h1{
+    text-align: center;
+    color: black;
+    margin-top: 20px;
+    margin: 30px;
+    font-size: 60px;
+}
+#container{
+    margin: auto;
+    margin-top: 50px;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: -2px -2px 5px grey;
+    background-color: #1d3849;
+    padding: 30px;
+}
+
+#display{
+    width: 89%;
+    height: 15%;
+    padding: 5%;
+    box-shadow: -3px -2px 5px grey;
+    border-radius: 10px;
+    background-color: black;
+}
+#display > input{
+    width: 80%;
+    height: 50%;
+   margin-top: 1.5%;
+   margin-left: 8%;
+   padding: 10px;
+   border-radius: 10px;
+   border: none;
+   outline: none;
+   font-size: 30px;
+   background-color: #000000;
+   color: white;
+}
+.User_input_box::placeholder{
+    color: white;
+}
+#buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,80px);
+    gap: 10px;
+    margin-top: 20px;
+}
+#buttons > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: 600;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+          0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    background-color: #000000;
+    color: white;
+}
+#buttons > div:hover{
+    background-color: teal;
+    color: white;
+}
+#buttons .red{
+    background-color: red;
+}
+
+#buttons .green{
+    background-color: grey;
+}
